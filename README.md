@@ -1,4 +1,4 @@
-# Swiftui Series Animation Challenge
+# SwiftUI Series Animation Challenge
 A week-long event to learn, compete and socialize in the world of SwiftUI. Participate in the animation event and show your skills to the world!.
 
 ## When?
