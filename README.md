@@ -4,6 +4,8 @@ A week-long event to learn, compete and socialise in the world of SwiftUI. Parti
 ## When?
 **May 23 - 27, 2022**
 
+**Sign up:** https://www.swiftuiseries.com/
+
 ## Your SwiftUI Animation Challenge
 Twitter’s Like and Medium’s cumulative clap reaction animations help people to express emotions and react to tweets and articles in ways words cannot. In this SwiftUI Series animation challenge, your job is to recreate/clone, or build something similar to the following animations using SwiftUI:
 
