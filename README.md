@@ -16,7 +16,7 @@ Twitter’s Like and Medium’s cumulative clap reaction animations help people 
       
       ![Realistic Chain ](https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/mediumClap.gif)<a href=""> Amos's Solution</a>
 
-## How to Share Your Animation Code**  
+## How to Share Your Animation Code 
 When you create the animations. you can put them in your own GitHub repository and send us the link to the projects. The purpose of this challenge is to learn from one another, compete and socialize in the world of SwiftUI. At the end of the challenge, we will share our version of the solution on GitHub. 
 
 We encourage you to participate in the SwiftUI animation event and show your skills to the world!. If you have any questions, contact <a href="https://twitter.com/amos_gyamfi">Amos</a> <a href="https://twitter.com/jordibruin"> Jordi</a> on Twitter.
