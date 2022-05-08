@@ -12,11 +12,11 @@ Twitter’s like and Medium’s cumulative clap reaction animations help people 
   1. **Twitter’s Like Reaction Animation/Interaction.** 
      
      ![Realistic Chain ](https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/twitterLikeReaction.gif)<a href=""> 
-     Amos's Solution</a>
+     Amos' Solution</a>
      
   3. **Medium’s Cumulative Clap Reaction Animation/Interaction.**
       
-      ![Realistic Chain ](https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/mediumClap.gif)<a href=""> Amos's Solution</a>
+      ![Realistic Chain ](https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/mediumClap.gif)<a href=""> Amos' Solution</a>
 
 ## How to Share Your Animation Code 
 When you create the animations. you can put them in your own GitHub repository and send us the link to the projects. The purpose of this challenge is to learn from one another, compete and socialize in the world of SwiftUI. At the end of the challenge, we will share our version of the solution on GitHub. 
