@@ -12,7 +12,7 @@ Twitter’s like and Medium’s cumulative clap reaction animations help people 
 
   1. **Twitter’s Like Reaction Animation/Interaction.** 
      
-     ![Twitter’s Like Reaction Animation/Interaction ]([https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/twitterLikeReaction.gif](https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/TwitterLikeReaction.gif))<a href=""> 
+     ![Twitter’s Like Reaction Animation/Interaction ]([https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/TwitterLikeReaction.gif])<a href=""> 
      Amos' Solution</a>
      
   3. **Medium’s Cumulative Clap Reaction Animation/Interaction.**
