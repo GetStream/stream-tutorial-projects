@@ -18,7 +18,8 @@ Twitter’s like and Medium’s cumulative clap reaction animations help people 
       
       ![Medium’s Cumulative Clap Reaction Animation/Interaction ](https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/mediumClap.gif)<a href=""> Amos' Solution</a>
 
-**Note:** In your solution, you should mention how MotionScape helped you in selecting your SwiftUI animation easings/interpolations. 
+**Note:** In your solution, you should mention how <a href="https://apps.apple.com/us/app/motionscape-animation-studio/id1616840951"> 
+     MotionsScape</a> helped you in selecting your SwiftUI animation easings/interpolations. 
 
 ## How to Share Your Animation Code 
 When you create the animations. you can put them in your own GitHub repository and send us the link to the projects. The purpose of this challenge is to learn from one another, compete and socialize in the world of SwiftUI. At the end of the challenge, we will share our version of the solution on GitHub. 
