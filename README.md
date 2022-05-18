@@ -11,11 +11,10 @@ Twitter’s like and Medium’s cumulative clap reaction animations help people 
      MotionsScape - Animation Studio (Prototype SwiftUI animations)</a> and SwiftUI:
 
   1. **Twitter’s Like Reaction Animation/Interaction.** 
+
+![Twitter’s Like Reaction Animation/Interaction ](https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/TwitterLikeReaction.gif)<a href=""> Amos' Solution</a>
      
-     ![Twitter’s Like Reaction Animation/Interaction ]([https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/TwitterLikeReaction.gif])<a href=""> 
-     Amos' Solution</a>
-     
-  3. **Medium’s Cumulative Clap Reaction Animation/Interaction.**
+  2. **Medium’s Cumulative Clap Reaction Animation/Interaction.**
       
       ![Medium’s Cumulative Clap Reaction Animation/Interaction ](https://github.com/GetStream/swiftui-series-animation-challenge/blob/main/Misc/mediumClap.gif)<a href=""> Amos' Solution</a>
 
