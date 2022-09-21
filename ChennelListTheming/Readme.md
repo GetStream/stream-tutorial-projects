@@ -3,9 +3,7 @@
 
 ## Introduction
 
-**Works for Xcode 13, iOS 15.0**
-
-![Header image]()
+![https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/ThemingViews.png](Header image)
 
 Stream’s [SwiftUI SDK](https://github.com/GetStream/stream-chat-swiftui) provides developers with a modern way to build great-looking [iOS chat messaging apps](https://getstream.io/tutorials/swiftui-chat/) using stateful components. This tutorial guides you to perform significant customizations for the channel list of Stream Chat SwiftUI apps using views injection. 
 
@@ -769,49 +767,5 @@ You can get the [finished project](https://github.com/GetStream/swiftui-tutorial
 - [SwiftUI SDK](https://github.com/GetStream/stream-chat-swiftui)
 - [Build a SwiftUI Chat Messaging App](https://getstream.io/tutorials/swiftui-chat/)
 
-# **Video tutorial**
 
-## **Intro**
-
-Hi, the Stream Chat SwiftUI SDK allows you to swap system-provided components with custom-made SwiftUI views. This video will help you understand how to make your Stream Chat SwiftUI app stand out by modifying the channel list components like the **navigation bar**, **top bar**, **sticky** **footer**, and **non-sticky footer**.
-
-**Show…**
-
-## **Speaker**
-
-I am Amos. Developer Advocate from Stream. I am so excited to guide you on How To Customize the Stream Chat Channel List of your SwiftUI app. So, let’s begin.
-
-## Unthemed Channel List
-
-So, the screen you see on the left will be our starter project. The SDK-provided channel list consists of a header, top bar, channel list items, non-sticky, and sticky footers. We can remove the components in all these sections and place custom SwiftUI views into their slots.  
-
-## Themed Channel List
-
-The screen on the right is the final project. It has a segmented control and toolbar items in the header slot. The search bar has been replaced with a custom scrollable SwiftUI view. We will put a button in the non-sticky footer section. It will only show once you scroll and reach the bottom part of the list of items, while they are loading. The sticky footer section will have a tab bar that resembles the tab bar in WhatsApp on iOS 
-
-## Getting Started
-
-This tutorial requires a blank SwiftUI project with the integration of the Stream SDK. However, how to set up the SDK is not covered here. If you are new to Stream and need help setting up the project, check out the [quick start guide tutorial](https://getstream.io/tutorials/swiftui-chat/).     
-
-            
-
-To begin, create a SwiftUI app with the name `ChannelListTheming` using Xcode and add the SwiftUI SDK using [Swift Package Manager](https://www.swift.org/package-manager/).  You can download the [completed sample code](https://github.com/GetStream/swiftui-tutorial-projects/tree/main/ChennelListTheming) for this tutorial from GitHub and explore it when you get stuck.
-
-To learn more about customizing the Stream chat SwiftUI SDK, you can check the theming section of the [documentation](https://getstream.io/chat/docs/sdk/ios/swiftui/channel-list-components/channel-list-header/). 
-
-## Recap
-
-In this video, we looked at how to swap the channel list components of a Stream chat SwiftUI app with custom SwiftUI views implementation. We changed the channel list header, the top bar, the sticky and non-sticky footers, and more.
-
-## What Do I Do Next?
-
-You can learn more about customizing the Stream chat SwiftUI SDK by reading the theming section of the [documentation](https://getstream.io/chat/docs/sdk/ios/swiftui/channel-list-components/channel-list-header/). You can also watch [Theming and Customizing Your Stream Chat SwiftUI App](https://youtu.be/vUdwok7RcMA) from the [Stream Developers YouTube channel](https://youtube.com/playlist?list=PLNBhvhkAJG6tJYnY-5oZ1JCp2fBNbVL_6).
-
-Thank you for watching
-
-## **Related links**
-
-- [View factory](https://github.com/GetStream/stream-chat-swiftui/blob/main/Sources/StreamChatSwiftUI/ViewFactory.swift)
-- [SwiftUI SDK](https://github.com/GetStream/stream-chat-swiftui)
-- [Build a SwiftUI Chat Messaging App](https://getstream.io/tutorials/swiftui-chat/)
 
