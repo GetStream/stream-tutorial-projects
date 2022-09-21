@@ -3,7 +3,7 @@
 
 ![Header image](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/How%20to%20Customize%20Stream%20Chat%20Channel%20List%20Blog-1200x630px.jpg)
 
-Stream’s [SwiftUI SDK](https://github.com/GetStream/stream-chat-swiftui) provides developers with a modern way to build great-looking [iOS chat messaging apps](https://getstream.io/tutorials/swiftui-chat/) using stateful components. This tutorial guides you to perform significant customizations for the channel list of Stream Chat SwiftUI apps using views injection. 
+The Stream’s [SwiftUI SDK](https://github.com/GetStream/stream-chat-swiftui) provides developers with a modern way to build great-looking [iOS chat messaging apps](https://getstream.io/tutorials/swiftui-chat/) using stateful components. This tutorial guides you to perform significant customizations for the channel list of Stream Chat SwiftUI apps using views injection. 
 
 You will discover how to swap Stream’s UI components with your bespoke layout and composition. In particular, you will customize the channel list by cloning the look and feel of popular messaging apps and implementing them into the channel list screen. For example, the navigation bar will look like that of the WhatsApp iOS app. The top bar will mimic that of Facebook Messenger. You will add a tab bar and compose button clones of WhatsApp and Twitter Chat to the footer section of the screen. Additionally, the footer will have a non-sticky button that will disappear on a scroll like LinkedIn chat.
 
