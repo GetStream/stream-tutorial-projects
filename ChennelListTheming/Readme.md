@@ -1,8 +1,6 @@
 
 # Using SwiftUI Views: How To Customize Stream Chat Channel List
 
-## Introduction
-
 ![Header image](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/How%20to%20Customize%20Stream%20Chat%20Channel%20List%20Blog-1200x630px.jpg)
 
 Stream’s [SwiftUI SDK](https://github.com/GetStream/stream-chat-swiftui) provides developers with a modern way to build great-looking [iOS chat messaging apps](https://getstream.io/tutorials/swiftui-chat/) using stateful components. This tutorial guides you to perform significant customizations for the channel list of Stream Chat SwiftUI apps using views injection. 
@@ -25,13 +23,12 @@ The SDK allows you to swap its standard components with any view that conforms t
 
 Some of the components that have slots for custom-built SwiftUI views are the navigation view, top view, list items, and sticky and non-sticky footers. Although this article does not cover how to change the channel list items, the procedure you will use for replacing the other components can be applied to modify the channel list items. If you need help customizing the channel list items, you can check out this [YouTube video](https://youtu.be/526swCwDMX8) and its [documentation](https://getstream.io/chat/docs/sdk/ios/swiftui/channel-list-components/helper-views/#changing-the-chat-channel-list-item). The image below shows some of the components that you will substitute.
 
-![ThemingViews.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/ThemingViews.png)
 
 ## The Project Structure and Setup
 
 After setting up the project and using the file `AppDelegate.swift` to connect to the SDK, you are ready to perform the channel list theming. The SwiftUI app structure of the completed project is similar to the image below. 
 
-![projectStructure.svg](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/projectStructure.svg)
+![projectStructure.svg](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/projectStructure.svg)
 
 ## The View Factory
 
@@ -125,7 +122,7 @@ class CustomUIFactory: ViewFactory {
 
 When there are no channels to be displayed, the SDK presents the image of the screen below. 
 
-![noChannel.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/noChannel.png)
+![noChannel.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/noChannel.png)
 
 You can replace the screen above with a standard SwiftUI view. Add a new file `NoChannelsYet.swift`, and replace its content with this code. 
 
@@ -166,7 +163,7 @@ It contains an SVG image with text below it. Next, you should call this file in 
 
 The screen will then become: 
 
-![noChannels.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/noChannels.png)
+![noChannels.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/noChannels.png)
 
 ## Change the Channel List Background Color
 
@@ -199,7 +196,7 @@ struct BackgroundView_Previews: PreviewProvider {
 
 It draws a gradient that transitions from orange to green on the screen. 
 
-![bgGradient.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/bgGradient.png)
+![bgGradient.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/bgGradient.png)
 
 In `CustomUIFactory.swift`, you should implement the `makeChannelListBackground` to see the custom background.
 
@@ -243,7 +240,7 @@ struct CustomListRowSeparator_Previews: PreviewProvider {
 
 It draws a rectangle with an orange gradient at the leading edge and a green gradient at the trailing edge. 
 
-![divider.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/divider.png)
+![divider.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/divider.png)
 
 To implement it in the custom view factory, you should use `makeChannelListDividerItem()`. In some situations, you may not need the list row separator. So, to hide it, you can pass `EmptyView()` to the closure of `makeChannelListDividerItem()`. It has a comment in the code below.
 
@@ -310,7 +307,7 @@ public struct CustomChannelHeader: ToolbarContent {
 
 The code creates three header items. It has a button at the leading, [segmented control](https://developer.apple.com/documentation/swiftui/segmentedpickerstyle), and a button at the trailing that resembles the header under the calls tab in the WhatsApp app.
 
-![header.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/header.png)
+![header.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/header.png)
 
 `ChannelListHeaderModifier.swift` is the view modifier that applies to `CustomChannelHeader.swift`. Substitute its content with this code:
 
@@ -531,7 +528,7 @@ struct UserOnlineView_Previews: PreviewProvider {
 
 It creates a horizontal scroll view of users currently online. 
 
-![topView.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/topView.png)
+![topView.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/topView.png)
 
 Next, you should specify in `CustomUIFactory.swift` that you want to swap the SDK’s top view with the content of `UserOnlineView.swift` using the code below:  
 
@@ -567,7 +564,7 @@ struct VerticalPaddingViewModifier: ViewModifier {
 
 The vertical padding view modifier is a `struct` that conforms to the `ViewModifier`. The sample code above adds eight points vertical gap between the top view and the channel list items. 
 
-![pad.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/pad.png)
+![pad.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/pad.png)
 
 Next, you should register `VerticalPaddingView.swift` in `CustomUIFactory.swift` by placing it inside the vertical padding slot using `makeChannelListModifier()`. 
 
@@ -611,7 +608,7 @@ struct JumpToTopButtonView_Previews: PreviewProvider {
 
 The above code creates a button that you can tap to jump onto the top part of the screen.
 
-![btn.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/btn.png)
+![btn.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/btn.png)
 
 Now, you can implement the button in `CustomUIFactory.swift` using `makeChannelListFooterView()`. 
 
@@ -661,7 +658,7 @@ struct TwitterComposeButtonView_Previews: PreviewProvider {
 
 It draws a “plus message” icon on the screen.
 
-![composeButton.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/composeButton.png)
+![composeButton.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/composeButton.png)
 
 The tab bar items should link to a page. So, add a new SwiftUI file `EmptyPageView.swift` with an empty text string.
 
@@ -757,7 +754,7 @@ Finally, place `WhatsAppTabView.swift` into the SDK’s sticky footer slot using
 
 When you follow all the sections described above in customizing the channel list screen with custom-made SwiftUI views, your finished project should look like the screen below.
 
-![jumpToTop.png](Using%20SwiftUI%20Views%20How%20To%20Customize%20Stream%20Chat%20C%2008822ce0491e453d87e86cadb2842150/jumpToTop.png)
+![jumpToTop.png](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/jumpToTop.png)
 
 You can get the [finished project](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/ChannellListTheming.zip) from GitHub to learn more. 
 
