@@ -3,7 +3,7 @@
 
 ## Introduction
 
-![https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/ThemingViews.png](Header image)
+![Header image]([Header image](https://github.com/GetStream/swiftui-tutorial-projects/blob/main/ChennelListTheming/Img/ThemingViews.png))
 
 Stream’s [SwiftUI SDK](https://github.com/GetStream/stream-chat-swiftui) provides developers with a modern way to build great-looking [iOS chat messaging apps](https://getstream.io/tutorials/swiftui-chat/) using stateful components. This tutorial guides you to perform significant customizations for the channel list of Stream Chat SwiftUI apps using views injection. 
 
