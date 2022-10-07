@@ -10,24 +10,31 @@ Let me begin by giving you a sneak peek of what you will walk away with after re
 So the chat app you will create provides:
 
 **Offline support**: send messages, edit messages and send reactions while offline
+
 ![Offline support](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/offlineSupportReactions2.gif)
 
 **Link previews**: generated automatically when you send a link
+
 ![Link](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/link2.gif)
 
 **Commands**: type `/` to use commands like `/giphy`
+
 ![Giphy](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/giphy2.gif)
 
 **Reactions**: tap-and-hold on a message bubble to add a reaction
+
 ![Reactions](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/reactions2.gif)
 
 **Attachments**: use the paperclip button in `MessageInputView` to attach images and files
+
 ![Attachments](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/attachment2.gif)
 
 **Edit message**: long-press on your message for message options, including editing
+
 ![Edit](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/edit2.gif)
 
 **Threads**: start message threads to reply to any message
+
 ![Threads](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/threads2.gif)
 
 
