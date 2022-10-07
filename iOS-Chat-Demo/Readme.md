@@ -11,6 +11,7 @@ So the chat app you will create provides
 
 **Offline support**: send messages, edit messages and send reactions while offline
 
+<img src="https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/offlineSupportReactions2.gif" alt="Paris" class="center">
 ![Offline support](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/offlineSupportReactions2.gif)
 
 **Link previews**: generated automatically when you send a link
@@ -202,3 +203,11 @@ You can now run the app to see the built-in list of channels and explore all the
 
 ## Where do I go next?
 A companion video tutorial of this article will be available soon on the Stream Developers YouTube Channel. You could check it out and subscribe. You can get the SwiftUI version from this [video](https://youtu.be/Gk14JlvXO6k) on the same channel and [article](https://getstream.io/tutorials/swiftui-chat/). Enjoy!!!.
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
