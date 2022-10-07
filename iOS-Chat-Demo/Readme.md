@@ -7,7 +7,7 @@ Let me begin by giving you a sneak peek of what you will walk away with after re
 
 ## Explore the app
 
-So the chat app you will create provides:
+So the chat app you will create provides
 
 **Offline support**: send messages, edit messages and send reactions while offline
 
