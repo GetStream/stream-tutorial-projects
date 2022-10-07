@@ -1,5 +1,6 @@
 
 # Make Your First iPhone Chat App With the Stream iOS / Swift SDK 
+![header](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/img/ioschatapp.jpg)
 
 ## Overview
 
