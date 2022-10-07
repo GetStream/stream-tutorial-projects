@@ -45,7 +45,7 @@ So the chat app you will create provides
 
 ## **Resources**
 
-- The [completed project](https://github.com/GetStream/ios-chat-tutorial) for this tutorial is available on GitHub.
+- The [completed project](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/iOS-Chat-Demo/iOSChatDemo.zip) for this tutorial is available on GitHub.
 - **Extend and customize the chat experience**. After creating the chat app, you may want to extend and modify it. Luckily, we have excellent documentation for theming and customization
     - [Theming documentation](https://getstream.io/chat/docs/sdk/ios/uikit/theming/)
 
