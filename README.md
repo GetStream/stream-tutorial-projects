@@ -1,13 +1,12 @@
 ## Stream's [SwiftUI Tutorial](https://youtube.com/playlist?list=PLNBhvhkAJG6tJYnY-5oZ1JCp2fBNbVL_6) Projects.
 You can find the projects in their respective folders. 
 
-
 **Building Fun SwiftUI Animations** 
 Watch the tutorial on [YouTube](https://www.youtube.com/playlist?list=PLNBhvhkAJG6tJYnY-5oZ1JCp2fBNbVL_6)
 
-![SwiftUI animated comments and emoji reactions ](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/AnimatedEmojiReactions/FunEmojiReactions.gif)<a href=""> Xcode project</a>
+![SwiftUI animated comments and emoji reactions ](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/AnimatedEmojiReactions/FunEmojiReactions.gif)<a href=""></a>
 
-![SwiftUI animated SVG and emoji reactions ](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/AnimatedEmojiReactions/emojiReactions1.gif)<a href=""> Xcode project</a>
+![SwiftUI animated SVG and emoji reactions ](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/AnimatedEmojiReactions/emojiReactions1.gif)<a href=""></a>
 
 ## Tutorial Contents
 **Animated Clapping Hands Animated Emoji**
