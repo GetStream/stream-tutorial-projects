@@ -3,7 +3,7 @@ You can find the projects in their respective folders.
 
 ## Create a Live Streaming App With Stream's iOS Video SDK 
 
-<p>Watch the tutorial on [YouTube](https://youtu.be/SnWwDM1YXrc?si=_GEAnWOxvT_UTXai)</p>
+<p>Watch the tutorial on [YouTube](https://youtu.be/SnWwDM1YXrc?si=_GEAnWOxvT_UTXai)<p/>
 ![Create a Live Streaming App With Stream's iOS Video SDK With SwiftUI Animations ](https://github.com/amosgyamfi/open-swiftui-animations/blob/master/AllGIF/amLiveFinal3.gif)
 ---
 
