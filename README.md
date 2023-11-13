@@ -1,4 +1,4 @@
-## Stream's [SwiftUI Tutorial](https://youtube.com/playlist?list=PLNBhvhkAJG6tJYnY-5oZ1JCp2fBNbVL_6) Projects.
+## Stream Developers [iOS/SwiftUI](https://youtube.com/playlist?list=PLNBhvhkAJG6tJYnY-5oZ1JCp2fBNbVL_6) and [Android/Compose](https://youtube.com/playlist?list=PLNBhvhkAJG6tbp6aGqQ81gU4VdARMWsin&si=7RKmg4em4HSBY-I8) Tutorial Projects.
 You can find the projects in their respective folders. 
 
 ## [SwiftUI Telegram Clone](TelegramClone): Text/voice messaging, audio/video calling, and animations
