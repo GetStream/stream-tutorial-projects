@@ -12,7 +12,9 @@ Watch the tutorial on [YouTube](https://www.youtube.com/playlist?list=PLNBhvhkAJ
 ![SwiftUI animated comments and emoji reactions ](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/AnimatedEmojiReactions/FunEmojiReactions.gif)
 
 <center>
+
 ![SwiftUI animated SVG and emoji reactions ](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/blob/main/AnimatedEmojiReactions/emojiReactions1.gif)
+
 </center>
 
 ---
