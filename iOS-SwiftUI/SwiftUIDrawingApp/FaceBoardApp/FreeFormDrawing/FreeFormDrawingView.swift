@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  FreeFormDrawingView.swift
 //  FaceBoard
 //
 //  Created by Gyamfi from getstream.io
@@ -15,7 +15,7 @@ import StreamChatSwiftUI
 struct FreeFormDrawingView: View {
     
     @ObservedObject var viewModel: CallViewModel
-    // Define a state variable to capture touches from the user's finger and Apple pencil.
+    // 1. Define a state variable to capture touches from the user's finger and Apple pencil.
     @State private var canvas = PKCanvasView()
     @State private var isDrawing = true
     @State private var color: Color = .black
@@ -31,9 +31,10 @@ struct FreeFormDrawingView: View {
     
     var body: some View {
         NavigationStack {
-            // Drawing View
+            // 2. Create an instance of the drawing view
             DrawingView(canvas: $canvas, isDrawing: $isDrawing, pencilType: $pencilType, color: $color)
                 .navigationBarTitleDisplayMode(.inline)
+                // 3. MARK: Toolbar items begin
                 .toolbar {
                     ToolbarItemGroup(placement: .bottomBar) {
                         Button {
@@ -293,7 +294,6 @@ struct FreeFormDrawingView: View {
                             }
                         }
                         
-                        
                         Divider()
                             .rotationEffect(.degrees(90))
                         
@@ -309,19 +309,19 @@ struct FreeFormDrawingView: View {
                             }
                         }
                     }
-                }
-        }
+                } // MARK: Toolbar items end
+        } // NavigationStack
     }
     
-    // Save drawings to Photos
+    // 4. Save drawings to Photos
     func saveDrawing() {
         // Get the drawing image from the canvas
         let drawingImage = canvas.drawing.image(from: canvas.drawing.bounds, scale: 1.0)
         
         // Save drawings to the Photos Album
         UIImageWriteToSavedPhotosAlbum(drawingImage, nil, nil, nil)
-    }
-}
+    } // saveDrawing()
+} // FreeFormDrawingView
 
 struct DrawingView: UIViewRepresentable {
     // Capture drawings for saving in the photos library
@@ -355,11 +355,11 @@ struct DrawingView: UIViewRepresentable {
         canvas.becomeFirstResponder()
         
         return canvas
-    }
+    } // makeUIView
     
     func updateUIView(_ uiView: PKCanvasView, context: Context) {
         // Update tool whenever the main view updates
         uiView.tool = isDrawing ? ink : eraser
-    }
-}
+    } // updateUIView
+} // DrawingView
 
