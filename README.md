@@ -11,7 +11,7 @@ You can find the projects in their respective folders.
 ---
 
 ## PencilKit SwiftUI Drawing App
-![PencilKit SwiftUI Drawing App]([Misc/faceboard.gif)
+![PencilKit SwiftUI Drawing App](Misc/faceboard.gif)
 ---
 
 ## Building Fun SwiftUI Animations
@@ -21,7 +21,7 @@ Watch the tutorial on [YouTube](https://www.youtube.com/playlist?list=PLNBhvhkAJ
 ---
 
 ## Test and send iOS push notifications in a SwiftUI or UIKit app using the simulator: [SwiftUI Project](https://github.com/GetStream/swift-and-swiftui-tutorial-projects/tree/main/AlertPushNotifications)
-![Alert Push Notifications ](Misc/defaultSoundAlertNotification.gif)
+![Alert Push Notifications](Misc/defaultSoundAlertNotification.gif)
 ---
 
 
