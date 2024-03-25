@@ -14,7 +14,7 @@ const callId = '';
 
 const user = {
   id: userId,
-  name: 'Amos Gyamfi',
+  name: 'Martin',
   image: `https://getstream.io/random_png/?id=${userId}&name=John+Malkovich`,
 };
 
