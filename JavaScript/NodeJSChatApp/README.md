@@ -1,6 +1,6 @@
 This tutorial will guide you in creating an instant Node-based chat app that runs on a JavaScript [server](https://getstream.io/blog/set-up-coding-environment/ ) and outside a web browser. To test the app, download the accompanied zip file.  
 
-![A preview of the chat UI](JavaScript/NodeJSChatApp/nodeChatPreview.gif)
+![A preview of the chat UI](https://github.com/GetStream/stream-tutorial-projects/blob/main/JavaScript/NodeJSChatApp/nodeChatPreview.gif)
 
 ## Before You Start
 
