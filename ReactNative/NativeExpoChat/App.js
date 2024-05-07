@@ -32,7 +32,7 @@ const sort = {
   last_message_at: -1,
 };
 
-const ChannelListScreen = () => {
+const ChannelListScreen = props => {
   const { setChannel } = useAppContext();
   return (
     <ChannelList
