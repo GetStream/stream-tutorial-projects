@@ -1,0 +1,36 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+}
+
+.str-chat__channel-list {
+  width: 30%;
+}
+
+.str-chat__channel {
+  width: 100%;
+}
+
+.str-chat__thread {
+  width: 45%;
+}
+
+.messageBubble {
+  max-width: 80%;
+  background: lightblue;
+  overflow: hidden;
+  word-break: break-word;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
