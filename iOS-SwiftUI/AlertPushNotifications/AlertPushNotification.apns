@@ -1,0 +1,16 @@
+{
+    "Simulator Target Bundle": "com.amosgyamfi.AlertPushNotifications",
+    "aps" : {
+       "alert" : {
+            "title" : "All Hands",
+            "body" : "Amos has joined the meeting"
+        },
+        "sound" : "AlertSound.m4a",
+        "badge" : 10,
+   },
+    "duration": "Current time",
+    "startedAt": "Meeting’s starting time"
+}
+
+
+
