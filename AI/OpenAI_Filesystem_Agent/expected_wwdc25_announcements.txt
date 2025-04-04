@@ -1,0 +1,8 @@
+The WWDC25 announcement will center around the following. 
+
+- iOS 19 and iPadOS 19.
+- macOS 16.
+- watchOS 12.
+- tvOS 19.
+- visionOS 3.
+- Mac Studio.

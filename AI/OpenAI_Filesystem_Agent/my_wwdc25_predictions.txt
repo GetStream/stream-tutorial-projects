@@ -1,0 +1,5 @@
+My wwdc25 predictions. The Apple WWDC25 invite clearly hints at 3 main things. 
+
+1. visionOS-like Glassmorphic design for iOS.
+2. Bouncier Animations: Probably an update to SwiftUI springs and implementation in Apple platforms. 
+3. Depth in UI accross Apple platforms.
