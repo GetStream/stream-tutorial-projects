@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B78B6382B4D8C8600175068 /* ChatVideoCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B6372B4D8C8600175068 /* ChatVideoCallApp.swift */; };
+		4B78B63C2B4D8C8800175068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B78B63B2B4D8C8800175068 /* Assets.xcassets */; };
+		4B78B63F2B4D8C8800175068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B78B63E2B4D8C8800175068 /* Preview Assets.xcassets */; };
+		4B78B64A2B4D8E0400175068 /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B78B6492B4D8E0400175068 /* StreamChatSwiftUI */; };
+		4B78B64D2B4D8FA400175068 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 4B78B64C2B4D8FA400175068 /* StreamVideo */; };
+		4B78B64F2B4D8FA400175068 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B78B64E2B4D8FA400175068 /* StreamVideoSwiftUI */; };
+		4B78B6512B4D901900175068 /* CustomChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B6502B4D901900175068 /* CustomChannelView.swift */; };
+		4B78B6532B4D902600175068 /* ReactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B6522B4D902600175068 /* ReactionsView.swift */; };
+		4B78B6552B4D902F00175068 /* ReactionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B6542B4D902F00175068 /* ReactionMainView.swift */; };
+		4B78B6572B4D903800175068 /* CustomUIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B6562B4D903800175068 /* CustomUIFactory.swift */; };
+		4B78B6592B4D907100175068 /* CallControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B6582B4D907100175068 /* CallControlsView.swift */; };
+		4B78B65B2B4D907C00175068 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B65A2B4D907C00175068 /* SplashView.swift */; };
+		4B78B65D2B4D909300175068 /* CallContainerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B65C2B4D909300175068 /* CallContainerSetup.swift */; };
+		4B78B65F2B4D909A00175068 /* ParticipantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B65E2B4D909A00175068 /* ParticipantsView.swift */; };
+		4B78B6612B4D90A100175068 /* FloatingParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78B6602B4D90A100175068 /* FloatingParticipantView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B78B6342B4D8C8600175068 /* ChatVideoCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatVideoCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B78B6372B4D8C8600175068 /* ChatVideoCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVideoCallApp.swift; sourceTree = "<group>"; };
+		4B78B63B2B4D8C8800175068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B78B63E2B4D8C8800175068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B78B6502B4D901900175068 /* CustomChannelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomChannelView.swift; sourceTree = "<group>"; };
+		4B78B6522B4D902600175068 /* ReactionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionsView.swift; sourceTree = "<group>"; };
+		4B78B6542B4D902F00175068 /* ReactionMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionMainView.swift; sourceTree = "<group>"; };
+		4B78B6562B4D903800175068 /* CustomUIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIFactory.swift; sourceTree = "<group>"; };
+		4B78B6582B4D907100175068 /* CallControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallControlsView.swift; sourceTree = "<group>"; };
+		4B78B65A2B4D907C00175068 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		4B78B65C2B4D909300175068 /* CallContainerSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallContainerSetup.swift; sourceTree = "<group>"; };
+		4B78B65E2B4D909A00175068 /* ParticipantsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantsView.swift; sourceTree = "<group>"; };
+		4B78B6602B4D90A100175068 /* FloatingParticipantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingParticipantView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B78B6312B4D8C8600175068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B78B64F2B4D8FA400175068 /* StreamVideoSwiftUI in Frameworks */,
+				4B78B64D2B4D8FA400175068 /* StreamVideo in Frameworks */,
+				4B78B64A2B4D8E0400175068 /* StreamChatSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B78B62B2B4D8C8600175068 = {
+			isa = PBXGroup;
+			children = (
+				4B78B6362B4D8C8600175068 /* ChatVideoCall */,
+				4B78B6352B4D8C8600175068 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B78B6352B4D8C8600175068 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B78B6342B4D8C8600175068 /* ChatVideoCall.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B78B6362B4D8C8600175068 /* ChatVideoCall */ = {
+			isa = PBXGroup;
+			children = (
+				4B78B6372B4D8C8600175068 /* ChatVideoCallApp.swift */,
+				4B78B6452B4D8C9A00175068 /* ChatSetUp */,
+				4B78B6472B4D8CC800175068 /* CallSetup */,
+				4B78B6462B4D8CB700175068 /* VideoCustomization */,
+				4B78B63B2B4D8C8800175068 /* Assets.xcassets */,
+				4B78B63D2B4D8C8800175068 /* Preview Content */,
+			);
+			path = ChatVideoCall;
+			sourceTree = "<group>";
+		};
+		4B78B63D2B4D8C8800175068 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B78B63E2B4D8C8800175068 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B78B6452B4D8C9A00175068 /* ChatSetUp */ = {
+			isa = PBXGroup;
+			children = (
+				4B78B6502B4D901900175068 /* CustomChannelView.swift */,
+			);
+			path = ChatSetUp;
+			sourceTree = "<group>";
+		};
+		4B78B6462B4D8CB700175068 /* VideoCustomization */ = {
+			isa = PBXGroup;
+			children = (
+				4B78B6522B4D902600175068 /* ReactionsView.swift */,
+				4B78B6542B4D902F00175068 /* ReactionMainView.swift */,
+				4B78B6562B4D903800175068 /* CustomUIFactory.swift */,
+				4B78B6582B4D907100175068 /* CallControlsView.swift */,
+				4B78B65A2B4D907C00175068 /* SplashView.swift */,
+			);
+			path = VideoCustomization;
+			sourceTree = "<group>";
+		};
+		4B78B6472B4D8CC800175068 /* CallSetup */ = {
+			isa = PBXGroup;
+			children = (
+				4B78B65C2B4D909300175068 /* CallContainerSetup.swift */,
+				4B78B65E2B4D909A00175068 /* ParticipantsView.swift */,
+				4B78B6602B4D90A100175068 /* FloatingParticipantView.swift */,
+			);
+			path = CallSetup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B78B6332B4D8C8600175068 /* ChatVideoCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B78B6422B4D8C8800175068 /* Build configuration list for PBXNativeTarget "ChatVideoCall" */;
+			buildPhases = (
+				4B78B6302B4D8C8600175068 /* Sources */,
+				4B78B6312B4D8C8600175068 /* Frameworks */,
+				4B78B6322B4D8C8600175068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatVideoCall;
+			packageProductDependencies = (
+				4B78B6492B4D8E0400175068 /* StreamChatSwiftUI */,
+				4B78B64C2B4D8FA400175068 /* StreamVideo */,
+				4B78B64E2B4D8FA400175068 /* StreamVideoSwiftUI */,
+			);
+			productName = ChatVideoCall;
+			productReference = 4B78B6342B4D8C8600175068 /* ChatVideoCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B78B62C2B4D8C8600175068 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4B78B6332B4D8C8600175068 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 4B78B62F2B4D8C8600175068 /* Build configuration list for PBXProject "ChatVideoCall" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B78B62B2B4D8C8600175068;
+			packageReferences = (
+				4B78B6482B4D8E0400175068 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
+				4B78B64B2B4D8FA400175068 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+			);
+			productRefGroup = 4B78B6352B4D8C8600175068 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B78B6332B4D8C8600175068 /* ChatVideoCall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B78B6322B4D8C8600175068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B78B63F2B4D8C8800175068 /* Preview Assets.xcassets in Resources */,
+				4B78B63C2B4D8C8800175068 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B78B6302B4D8C8600175068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B78B65D2B4D909300175068 /* CallContainerSetup.swift in Sources */,
+				4B78B65B2B4D907C00175068 /* SplashView.swift in Sources */,
+				4B78B6532B4D902600175068 /* ReactionsView.swift in Sources */,
+				4B78B6592B4D907100175068 /* CallControlsView.swift in Sources */,
+				4B78B6612B4D90A100175068 /* FloatingParticipantView.swift in Sources */,
+				4B78B6552B4D902F00175068 /* ReactionMainView.swift in Sources */,
+				4B78B65F2B4D909A00175068 /* ParticipantsView.swift in Sources */,
+				4B78B6512B4D901900175068 /* CustomChannelView.swift in Sources */,
+				4B78B6382B4D8C8600175068 /* ChatVideoCallApp.swift in Sources */,
+				4B78B6572B4D903800175068 /* CustomUIFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B78B6402B4D8C8800175068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B78B6412B4D8C8800175068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B78B6432B4D8C8800175068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChatVideoCall/Preview Content\"";
+				DEVELOPMENT_TEAM = 5BXN67M73D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amosgyamfi.ChatVideoCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B78B6442B4D8C8800175068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChatVideoCall/Preview Content\"";
+				DEVELOPMENT_TEAM = 5BXN67M73D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amosgyamfi.ChatVideoCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B78B62F2B4D8C8600175068 /* Build configuration list for PBXProject "ChatVideoCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B78B6402B4D8C8800175068 /* Debug */,
+				4B78B6412B4D8C8800175068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B78B6422B4D8C8800175068 /* Build configuration list for PBXNativeTarget "ChatVideoCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B78B6432B4D8C8800175068 /* Debug */,
+				4B78B6442B4D8C8800175068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B78B6482B4D8E0400175068 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-chat-swiftui";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		4B78B64B2B4D8FA400175068 /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B78B6492B4D8E0400175068 /* StreamChatSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B78B6482B4D8E0400175068 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */;
+			productName = StreamChatSwiftUI;
+		};
+		4B78B64C2B4D8FA400175068 /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B78B64B2B4D8FA400175068 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		4B78B64E2B4D8FA400175068 /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B78B64B2B4D8FA400175068 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4B78B62C2B4D8C8600175068 /* Project object */;
+}
