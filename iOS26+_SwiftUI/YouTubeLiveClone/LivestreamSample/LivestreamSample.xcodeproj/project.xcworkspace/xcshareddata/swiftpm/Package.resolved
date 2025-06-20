@@ -1,0 +1,33 @@
+{
+  "originHash" : "3c687f9c55cafecde9386bd93cc1ea668b3d55f8730f92f40ca6e7b2006f68fb",
+  "pins" : [
+    {
+      "identity" : "stream-video-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-video-swift.git",
+      "state" : {
+        "revision" : "57c47b61247cc928d09bf9cfa67b8272d649b3d5",
+        "version" : "1.25.0"
+      }
+    },
+    {
+      "identity" : "stream-video-swift-webrtc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-video-swift-webrtc.git",
+      "state" : {
+        "revision" : "4d58b1cdc35e2689968579078555779f2bb3a405",
+        "version" : "125.6422.70"
+      }
+    },
+    {
+      "identity" : "swift-protobuf",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-protobuf.git",
+      "state" : {
+        "revision" : "102a647b573f60f73afdce5613a51d71349fe507",
+        "version" : "1.30.0"
+      }
+    }
+  ],
+  "version" : 3
+}
