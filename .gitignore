@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Large archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Node modules
+node_modules/
