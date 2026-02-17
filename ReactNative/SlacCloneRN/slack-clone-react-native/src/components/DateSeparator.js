@@ -1,0 +1,45 @@
+import React from 'react';
+import {View, StyleSheet} from 'react-native';
+import moment from 'moment';
+import {useTheme} from '@react-navigation/native';
+import {SCText} from './SCText';
+
+export const DateSeparator = ({date}) => {
+  const {colors} = useTheme();
+  const dateValue = date || new Date();
+
+  return (
+    <View
+      style={[
+        styles.container,
+        {
+          borderBottomColor: colors.border,
+        },
+      ]}>
+      <SCText style={styles.date}>
+        {moment(dateValue).calendar(null, {
+          sameDay: '[Today]',
+          nextDay: '[Tomorrow]',
+          nextWeek: 'dddd',
+          lastDay: '[Yesterday]',
+          lastWeek: '[Last] dddd',
+          sameElse: 'DD/MM/YYYY',
+        })}
+      </SCText>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'column',
+    marginBottom: 10,
+    marginTop: 10,
+    borderBottomWidth: 1,
+  },
+  date: {
+    fontWeight: 'bold',
+    paddingBottom: 5,
+    fontSize: 12,
+  },
+});
