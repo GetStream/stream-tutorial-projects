@@ -80,6 +80,18 @@ wheels = [
 ]
 
 [[package]]
+name = "aiohttp-retry"
+version = "2.9.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9d/61/ebda4d8e3d8cfa1fd3db0fb428db2dd7461d5742cea35178277ad180b033/aiohttp_retry-2.9.1.tar.gz", hash = "sha256:8eb75e904ed4ee5c2ec242fefe85bf04240f685391c4879d8f541d6028ff01f1", size = 13608, upload-time = "2024-11-06T10:44:54.574Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1a/99/84ba7273339d0f3dfa57901b846489d2e5c2cd731470167757f1935fffbd/aiohttp_retry-2.9.1-py3-none-any.whl", hash = "sha256:66d2759d1921838256a05a3f80ad7e724936f083e35be5abb5e16eed6be6dc54", size = 9981, upload-time = "2024-11-06T10:44:52.917Z" },
+]
+
+[[package]]
 name = "aioice"
 version = "0.10.2"
 source = { registry = "https://pypi.org/simple" }
@@ -913,14 +925,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "google-genai" },
-    { name = "vision-agents", extra = ["deepgram", "elevenlabs", "gemini", "getstream", "openai"] },
+    { name = "vision-agents", extra = ["deepgram", "elevenlabs", "gemini", "getstream", "openai", "twilio"] },
     { name = "vision-agents-plugins-gemini" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "google-genai", specifier = ">=1.16.0" },
-    { name = "vision-agents", extras = ["deepgram", "elevenlabs", "gemini", "getstream", "openai"], specifier = ">=0.3.7" },
+    { name = "vision-agents", extras = ["deepgram", "elevenlabs", "gemini", "getstream", "openai", "twilio"], specifier = ">=0.3.7" },
     { name = "vision-agents-plugins-gemini", specifier = ">=0.3.7" },
 ]
 
@@ -1938,6 +1950,21 @@ wheels = [
 ]
 
 [[package]]
+name = "twilio"
+version = "9.10.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "aiohttp-retry" },
+    { name = "pyjwt" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1c/a1/44cd8604eb69b1c5e7c0f07f0e4305b1884a3b75e23eb8d89350fe7bb982/twilio-9.10.2.tar.gz", hash = "sha256:f17d778870a7419a7278d5747b0e80a1c89e6f5ab14acf5456a004f8f2016bfa", size = 1618748, upload-time = "2026-02-18T04:40:44.279Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6c/ac/e1937f70544075f896bfcd6b23fa7c15cad945e4598bcfa7017b7c120ad8/twilio-9.10.2-py2.py3-none-any.whl", hash = "sha256:8722bb59bacf31fab5725d6f5d3fac2224265c669d38f653f53179165533da43", size = 2256481, upload-time = "2026-02-18T04:40:42.226Z" },
+]
+
+[[package]]
 name = "twine"
 version = "6.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2064,6 +2091,9 @@ getstream = [
 openai = [
     { name = "vision-agents-plugins-openai" },
 ]
+twilio = [
+    { name = "vision-agents-plugins-twilio" },
+]
 
 [[package]]
 name = "vision-agents-plugins-deepgram"
@@ -2130,6 +2160,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/06/2a/f5a8ce944b09f10465c0f3f75f22d46c2e89cb9d709a6c3af3ca3a60b180/vision_agents_plugins_openai-0.3.7.tar.gz", hash = "sha256:3d1c063ce9271e0c8d5fcba1da3474c66e1333ae30b4f750a9385cc6dc17d24f", size = 30638, upload-time = "2026-02-23T21:42:12.229Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b4/7a/e005196c255466e4ef4a07d0c92835abfbd78afc6e5c43651d8e442ae4a5/vision_agents_plugins_openai-0.3.7-py3-none-any.whl", hash = "sha256:c50bb370c74102711611a4b4746bbf729228b499fb5ba6656a83f3215d4720f3", size = 45481, upload-time = "2026-02-23T21:42:11.406Z" },
+]
+
+[[package]]
+name = "vision-agents-plugins-twilio"
+version = "0.3.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "fastapi" },
+    { name = "numpy" },
+    { name = "twilio" },
+    { name = "vision-agents" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/42/85/ef5cc7a698ee6a0ec3b06dad22c126f1b610d8643400c68269873d157a9e/vision_agents_plugins_twilio-0.3.8.tar.gz", hash = "sha256:65bf838a07af8f921233c501994ee7ddac41edef1845500c74dd5f254e1b0e9e", size = 10188, upload-time = "2026-02-24T19:44:08.253Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c2/5f/0c83b7aa511dcb26663058628fbd8a7d1e348e1b22625a2d94736e4ab9f2/vision_agents_plugins_twilio-0.3.8-py3-none-any.whl", hash = "sha256:885881073a1ba96f328e9358b3f2779004d997724e2f623d1e20586a48c6ce0a", size = 16362, upload-time = "2026-02-24T19:44:06.55Z" },
 ]
 
 [[package]]

@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "vision-agents[deepgram,elevenlabs,gemini,getstream,openai]>=0.3.7",
+    "vision-agents[deepgram,elevenlabs,gemini,getstream,openai,twilio]>=0.3.7",
     "google-genai>=1.16.0",
     "vision-agents-plugins-gemini>=0.3.7",
 ]

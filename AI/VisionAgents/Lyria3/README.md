@@ -16,12 +16,16 @@ This project includes standalone scripts for quick experimentation and a [Vision
 # Clone and enter the project
 cd Lyria3
 
-# Create a .env file with your API key
+# Create a .env file with your API keys
 echo "GOOGLE_API_KEY=your-key-here" > .env
 
-# For the Vision Agents plugin, also add:
+# For the Vision Agents plugin (video call + phone call), also add:
 # STREAM_API_KEY=your-stream-key
 # STREAM_API_SECRET=your-stream-secret
+
+# For Twilio phone call support, also add:
+# TWILIO_ACCOUNT_SID=your-twilio-sid
+# TWILIO_AUTH_TOKEN=your-twilio-token
 
 # Install dependencies
 uv sync
@@ -106,6 +110,37 @@ plugins/lyria/
     ├── lyria_audio_track.py
     └── lyria_music_processor.py
 ```
+
+## Music Generation via Phone Call
+
+Generate music through a Twilio outbound phone call. The agent calls the specified number, greets the caller, and generates music based on voice requests — all over a regular phone line.
+
+### Prerequisites
+
+- A [Twilio](https://www.twilio.com/) account with an active phone number
+- [ngrok](https://ngrok.com/) to expose your local server for Twilio's WebSocket media stream
+
+### Run the Phone Call Agent
+
+```bash
+# Start ngrok in a separate terminal
+ngrok http 8000
+
+# Run the agent with your ngrok URL, Twilio number, and destination number
+NGROK_URL=https://your-subdomain.ngrok-free.app uv run music_gen_via_phone_call.py \
+  --from +1XXXXXXXXXX \
+  --to +1XXXXXXXXXX
+```
+
+The agent will:
+
+1. Start a local server on port 8000
+2. Place an outbound call via Twilio to the `--to` number
+3. Greet the caller and ask what music they'd like
+4. Generate a 30-second track using Lyria 3 when requested
+5. Auto-play the generated WAV file on the server
+
+The same voice commands available in the video call agent (`generate_music`, `set_tempo`, `change_music_style`, `blend_styles`) work over the phone.
 
 ## Lyria RealTime Controls
 
