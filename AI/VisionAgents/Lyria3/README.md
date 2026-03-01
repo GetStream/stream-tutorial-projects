@@ -1,16 +1,14 @@
 # Lyria 3 AI Music Generator
 
-Generate instrumental music using [Google's Lyria RealTime API](https://ai.google.dev/gemini-api/docs/music-generation) — a streaming, WebSocket-based model that produces 48kHz stereo PCM audio in real time.
+Generate classical, instrumental, afrobeats, retro synthwave, pop, rock, jazz, R&B, folk, 80s, 90s, etc music using [Google Lyria RealTime](https://ai.google.dev/gemini-api/docs/music-generation) in the Gemini API. Lyria 3 uses a streaming, WebSocket-based model that produces 48kHz stereo PCM audio in real time.
 
-This project includes standalone scripts for quick experimentation and a [Vision Agents](https://visionagents.ai/) plugin that lets users generate music through voice commands in a live call.
+The GitHub demos in this project include standalone scripts using the model in the Gemini API for quick experimentation. There are also [Vision Agents](https://visionagents.ai/) plugin examples that let users generate music through voice commands in live audio and video calls using the Gemini Live API.
 
-## Prerequisites
+## Prerequisites & Setup
 
 - Python 3.13+
 - [uv](https://docs.astral.sh/uv/) package manager
 - A [Google API key](https://aistudio.google.com/apikey) with Gemini API access
-
-## Setup
 
 ```bash
 # Clone and enter the project
@@ -31,7 +29,7 @@ echo "GOOGLE_API_KEY=your-key-here" > .env
 uv sync
 ```
 
-## Standalone Scripts
+## Standalone Scripts Using Gemini API
 
 Three self-contained scripts demonstrate Lyria RealTime capabilities. Each generates a 30-second WAV file and auto-plays it on completion.
 
