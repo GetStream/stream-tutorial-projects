@@ -1,0 +1,184 @@
+/* ── Layout ─────────────────────────────────────────────── */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #0e0e10;
+  color: #efeff1;
+  overflow: hidden;
+}
+
+.title-bar {
+  background: #18181b;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #2d2d30;
+  flex-shrink: 0;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ── Player ─────────────────────────────────────────────── */
+
+.player-section {
+  flex: 1;
+  position: relative;
+  background: #000;
+  min-width: 0;
+  transition: flex 0.3s ease;
+}
+
+.player-section.expanded {
+  flex: 1;
+}
+
+.ivs-player {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ivs-player video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+.player-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 5;
+  gap: 12px;
+}
+
+.player-overlay p {
+  color: #a1a1aa;
+  font-size: 14px;
+  margin: 0;
+}
+
+.player-overlay .error-text {
+  color: #ef4444;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.player-overlay .error-hint {
+  color: #71717a;
+  font-size: 13px;
+}
+
+.toggle-chat-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #efeff1;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.toggle-chat-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* ── Chat panel (wrapper around Stream Chat SDK) ────────── */
+
+.chat-panel {
+  width: 360px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #2d2d30;
+  height: 100%;
+  overflow: hidden;
+}
+
+.chat-panel .str-chat {
+  height: 100%;
+}
+
+.chat-panel .str-chat__channel {
+  height: 100%;
+}
+
+.chat-panel .str-chat__container {
+  height: 100%;
+}
+
+.chat-panel .str-chat__main-panel {
+  height: 100%;
+}
+
+.chat-panel .str-chat__message-list-scroll {
+  padding: 8px;
+}
+
+/* ── Status screens ─────────────────────────────────────── */
+
+.status-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.status-container h2 {
+  font-size: 18px;
+  color: #efeff1;
+  margin: 0;
+}
+
+.status-container p {
+  color: #a1a1aa;
+  font-size: 13px;
+  margin: 0;
+  max-width: 300px;
+}
+
+.status-hint {
+  color: #71717a !important;
+  font-size: 12px !important;
+}
+
+/* ── Loading spinner ────────────────────────────────────── */
+
+.loading-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #3d3d40;
+  border-top-color: #d946ef;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
