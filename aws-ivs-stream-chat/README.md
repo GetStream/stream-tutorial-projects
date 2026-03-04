@@ -2,7 +2,7 @@
 
 A real-time live streaming application that combines **Amazon IVS** for low-latency video playback with **Stream Chat React** for interactive chat, reactions, and comments in a sidebar.
 
-![Live Event Chat Demo](https://github.com/user-attachments/assets/placeholder-screenshot.png)
+![Live Event Chat Demo](aws-ivs-stream-chat/src/assets/aws_ivs_chat_demo.gif)
 
 ---
 
