@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vision-agents-plugins-kittentts"
+version = "0.1.0"
+description = "KittenTTS integration for Vision Agents - ultra-lightweight CPU-based text-to-speech"
+readme = "README.md"
+keywords = ["kittentts", "TTS", "text-to-speech", "AI", "voice agents", "agents", "kittenml"]
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "vision-agents[deepgram,gemini]",
+    "kittentts @ git+https://github.com/KittenML/KittenTTS.git",
+    "soundfile>=0.12.0",
+    "numpy>=1.24.0",
+]
+
+[project.urls]
+Documentation = "https://visionagents.ai/"
+Website = "https://visionagents.ai/"
+Source = "https://github.com/GetStream/Vision-Agents"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = [".", "vision_agents"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/vision_agents"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+    "python-dotenv>=1.0.0",
+]

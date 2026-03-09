@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vision-agents-plugins-vibevoice"
+dynamic = ["version"]
+description = "VibeVoice TTS integration for Vision Agents — expressive, long-form, multi-speaker conversational audio"
+readme = "README.md"
+keywords = ["vibevoice", "TTS", "text-to-speech", "AI", "voice agents", "agents", "multi-speaker", "streaming"]
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "vision-agents[getstream]",
+    "websockets>=12.0",
+    "httpx>=0.27.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+examples = [
+    "vision-agents-plugins-getstream",
+    "vision-agents-plugins-openai",
+    "vision-agents-plugins-deepgram",
+    "getstream<3.0.0",
+    "python-dotenv",
+]
+
+[project.urls]
+Documentation = "https://visionagents.ai/"
+Website = "https://visionagents.ai/"
+Source = "https://github.com/GetStream/Vision-Agents"
+VibeVoice = "https://github.com/microsoft/VibeVoice"
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { root = "..", search_parent_directories = true, fallback_version = "0.0.0" }
+
+[tool.hatch.build.targets.wheel]
+packages = [".", "vision_agents"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/vision_agents"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+]

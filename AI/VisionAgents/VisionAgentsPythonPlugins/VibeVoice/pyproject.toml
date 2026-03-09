@@ -1,0 +1,10 @@
+[project]
+name = "vibevoice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "vision-agents[deepgram,elevenlabs,gemini,getstream,openai]>=0.4.1",
+    "getstream<3.0.0",
+]
