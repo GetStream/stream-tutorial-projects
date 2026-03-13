@@ -1,0 +1,21 @@
+[project]
+name = "tada-tts-example"
+version = "0.0.0"
+requires-python = ">=3.13"
+
+dependencies = [
+    "python-dotenv>=1.0",
+    "vision-agents[deepgram,gemini,getstream]>=0.4.3",
+    "vision-agents-plugins-tada",
+    "hume-tada>=0.1.6",
+    "descript-audio-codec>=1.0.0",
+]
+
+[tool.uv.sources]
+vision-agents-plugins-tada = { path = "..", editable = true }
+
+[tool.uv]
+override-dependencies = [
+    "protobuf>=6.31.1",
+    "transformers>=4.57.1,<5",
+]

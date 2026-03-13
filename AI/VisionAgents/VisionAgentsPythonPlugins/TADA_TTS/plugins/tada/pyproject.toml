@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vision-agents-plugins-tada"
+version = "0.1.0"
+description = "TADA (Hume AI) TTS integration for Vision Agents - fast, reliable speech generation via text-acoustic dual alignment"
+readme = "README.md"
+keywords = ["tada", "hume-ai", "TTS", "text-to-speech", "AI", "voice agents", "agents", "speech-language-model"]
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "vision-agents",
+    "hume-tada>=0.1.6",
+]
+
+[project.urls]
+Documentation = "https://visionagents.ai/"
+Website = "https://visionagents.ai/"
+Source = "https://github.com/GetStream/Vision-Agents"
+
+[tool.hatch.build.targets.wheel]
+packages = ["vision_agents"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/vision_agents"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+]
