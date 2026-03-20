@@ -2,6 +2,8 @@
 
 A Text-to-Speech (TTS) plugin for [Vision Agents](https://github.com/GetStream/Vision-Agents) powered by [xAI's Grok Voice API](https://x.ai/api/voice). Provides five expressive voices with inline speech tags for fine-grained delivery control.
 
+[![Watch the Grok TTS + Vision Agents video](https://img.youtube.com/vi/B3A0fNZTgko/maxresdefault.jpg)](https://youtu.be/B3A0fNZTgko?si=dGiqKVlbhlRA_zOR)
+
 ## Features
 
 - Five distinct voices: Eve, Ara, Leo, Rex, Sal
