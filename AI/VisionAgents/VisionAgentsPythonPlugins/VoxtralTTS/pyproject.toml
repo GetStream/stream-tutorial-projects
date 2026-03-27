@@ -1,0 +1,11 @@
+[project]
+name = "voxtraltts"
+version = "0.1.0"
+description = "Voxtral TTS plugin for Vision Agents - Mistral's text-to-speech with zero-shot voice cloning"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "vision-agents[deepgram,gemini,getstream,smart-turn]>=0.4.6",
+    "mistralai>=1.0.0",
+    "python-dotenv>=1.0",
+]
