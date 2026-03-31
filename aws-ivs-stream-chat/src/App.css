@@ -12,7 +12,10 @@
 .title-bar {
   background: #18181b;
   padding: 10px 16px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -20,10 +23,56 @@
   flex-shrink: 0;
 }
 
+.title-text {
+  position: absolute;
+  left: 16px;
+}
+
 .app-content {
   display: flex;
   flex: 1;
   overflow: hidden;
+}
+
+/* ── Streaming Mode Toggle ──────────────────────────────── */
+
+.mode-toggle {
+  display: flex;
+  background: #27272a;
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.mode-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #a1a1aa;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.mode-toggle-btn:hover {
+  color: #efeff1;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mode-toggle-btn.active {
+  background: #d946ef;
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(217, 70, 239, 0.3);
+}
+
+.mode-toggle-btn svg {
+  flex-shrink: 0;
 }
 
 /* ── Player ─────────────────────────────────────────────── */
@@ -101,6 +150,182 @@
 
 .toggle-chat-btn:hover {
   background: rgba(0, 0, 0, 0.85);
+}
+
+/* ── IVS Real-Time Stage ────────────────────────────────── */
+
+.rt-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #0e0e10;
+}
+
+.rt-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: #18181b;
+  border-bottom: 1px solid #2d2d30;
+  flex-shrink: 0;
+}
+
+.rt-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rt-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #71717a;
+  flex-shrink: 0;
+}
+
+.rt-status-dot.connected {
+  background: #22c55e;
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.5);
+}
+
+.rt-status-dot.connecting {
+  background: #eab308;
+  animation: pulse-dot 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.rt-status-text {
+  font-size: 13px;
+  color: #a1a1aa;
+  font-weight: 500;
+}
+
+.rt-join-btn,
+.rt-leave-btn {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rt-join-btn {
+  background: #d946ef;
+  color: #fff;
+}
+
+.rt-join-btn:hover:not(:disabled) {
+  background: #c026d3;
+}
+
+.rt-join-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.rt-leave-btn {
+  background: #ef4444;
+  color: #fff;
+}
+
+.rt-leave-btn:hover {
+  background: #dc2626;
+}
+
+.rt-error {
+  padding: 10px 16px;
+  background: rgba(239, 68, 68, 0.1);
+  border-bottom: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.rt-error p {
+  margin: 0;
+  color: #fca5a5;
+  font-size: 13px;
+}
+
+.rt-grid {
+  flex: 1;
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  min-height: 0;
+}
+
+.rt-grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.rt-grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.rt-grid-3 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.rt-grid-4 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.rt-participant {
+  position: relative;
+  background: #1a1a1d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.rt-participant video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+}
+
+.rt-participant-label {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  color: #efeff1;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.rt-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.rt-empty p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.rt-empty .rt-empty-hint {
+  color: #71717a;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 /* ── Chat panel (wrapper around Stream Chat SDK) ────────── */
