@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vision-agents-plugins-neutts"
+dynamic = ["version"]
+description = "Neu TTS integration for Vision Agents - on-device text-to-speech with voice cloning by Neuphonic"
+readme = "README.md"
+keywords = ["neutts", "neuphonic", "TTS", "text-to-speech", "AI", "voice agents", "agents", "on-device", "voice-cloning"]
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "vision-agents",
+    "neutts>=1.2.0",
+]
+
+[project.urls]
+Documentation = "https://visionagents.ai/"
+Website = "https://visionagents.ai/"
+Source = "https://github.com/GetStream/Vision-Agents"
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { root = "..", search_parent_directories = true, fallback_version = "0.0.0" }
+
+[tool.hatch.build.targets.wheel]
+packages = [".", "vision_agents"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/vision_agents"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+]

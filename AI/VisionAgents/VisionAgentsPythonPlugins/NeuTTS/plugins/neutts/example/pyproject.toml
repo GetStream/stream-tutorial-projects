@@ -1,0 +1,14 @@
+[project]
+name = "neutts-example"
+version = "0.0.0"
+requires-python = ">=3.13"
+
+dependencies = [
+    "python-dotenv>=1.0",
+    "neutts>=1.2.0",
+    "vision-agents-plugins-neutts",
+    "vision-agents[deepgram,gemini,getstream,smart-turn]>=0.4.3",
+]
+
+[tool.uv.sources]
+vision-agents-plugins-neutts = { path = "..", editable = true }

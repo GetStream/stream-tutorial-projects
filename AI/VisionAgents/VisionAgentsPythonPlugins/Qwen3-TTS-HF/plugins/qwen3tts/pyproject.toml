@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vision-agents-plugins-qwen3tts"
+version = "0.1.0"
+description = "Qwen3-TTS integration for Vision Agents — multilingual text-to-speech with voice design and zero-shot voice cloning via HuggingFace Transformers"
+readme = "README.md"
+keywords = ["qwen3-tts", "TTS", "text-to-speech", "voice-cloning", "voice-design", "AI", "voice agents", "agents", "huggingface", "transformers"]
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "vision-agents[deepgram]",
+    "qwen-tts>=0.1.0",
+    "torch>=2.0",
+    "numpy",
+    "soundfile",
+]
+
+[project.urls]
+Documentation = "https://visionagents.ai/"
+Website = "https://visionagents.ai/"
+Source = "https://github.com/GetStream/Vision-Agents"
+
+[tool.hatch.build.targets.wheel]
+packages = [".", "vision_agents"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/vision_agents"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+]

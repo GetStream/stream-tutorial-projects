@@ -1,0 +1,14 @@
+[project]
+name = "qwen3-tts-hf"
+version = "0.1.0"
+description = "Qwen3-TTS plugin for Vision Agents — multilingual TTS with voice design and zero-shot voice cloning via HuggingFace"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "vision-agents[deepgram,gemini,getstream,smart-turn]>=0.5.1",
+    "qwen-tts>=0.1.0",
+    "torch>=2.0",
+    "numpy",
+    "soundfile",
+    "python-dotenv>=1.0",
+]
