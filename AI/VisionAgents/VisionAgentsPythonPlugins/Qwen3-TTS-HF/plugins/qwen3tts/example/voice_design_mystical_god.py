@@ -1,18 +1,20 @@
 """
-Qwen3-TTS VoiceDesign (1.7B) + Vision Agents
+Qwen3-TTS VoiceDesign — Mystical God (Zeus)
 
-Uses Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign to create novel voices from
-natural-language descriptions. Design any voice persona by describing the
-desired timbre, age, gender, emotion, and speaking style.
+The friendly mythical God, Zeus, has a huge, deep, powerful voice.
+Charming, proud, strong, and theatrical.
+
+Combines: Acoustic Attribute Control (deep, booming, resonant),
+Gradual Control (theatrical, grand pacing), Human-Likeness (godlike
+authority), Background Information (mythological deity persona).
 
 Required env vars:
     HF_TOKEN, DEEPGRAM_API_KEY, GOOGLE_API_KEY,
     STREAM_API_KEY, STREAM_API_SECRET
 
-
 Run with:
 cd /Users/amosgyamfi/Documents/StreamDevRel/2026/AIPython/Qwen3-TTS-HF
-uv run python plugins/qwen3tts/example/voice_design_example.py run
+uv run python plugins/qwen3tts/example/voice_design_mystical_god.py run
 """
 
 import asyncio
@@ -36,12 +38,13 @@ load_dotenv()
 
 
 async def create_agent(**kwargs) -> Agent:
-    """Create a voice agent with Qwen3-TTS VoiceDesign — a designed voice persona."""
+    """Create a voice agent with a mythical Zeus persona."""
     agent = Agent(
         edge=getstream.Edge(),
-        agent_user=User(name="Qwen3 TTS AI", id="agent"),
+        agent_user=User(name="Zeus", id="agent"),
         instructions=(
-            "You are a helpful voice assistant with a uniquely designed voice. "
+            "You are Zeus, king of the Olympian gods, ruler of the sky and thunder. "
+            "You are friendly but proud, speaking with grand theatrical flair. "
             "IMPORTANT: Keep every response to ONE short sentence, under 15 words."
         ),
         tts=Qwen3TTS(
@@ -49,9 +52,13 @@ async def create_agent(**kwargs) -> Agent:
             mode="voice_design",
             language="English",
             instruct=(
-                "A warm, confident female narrator in her 30s with a clear "
-                "mid-range voice. Calm and reassuring, with a slight smile "
-                "in the tone, perfect for storytelling."
+                "A powerful male god with an immensely deep, booming, resonant "
+                "bass voice that reverberates as if echoing through a vast marble "
+                "temple. The tone is charming, proud, and strong with a theatrical, "
+                "grandiose delivery. He speaks slowly and deliberately, savoring "
+                "each word with regal authority. The voice carries warmth beneath "
+                "its overwhelming power, with rich, velvety low tones and a "
+                "commanding, larger-than-life presence."
             ),
         ),
         stt=deepgram.STT(eager_turn_detection=True),
@@ -66,13 +73,13 @@ async def create_agent(**kwargs) -> Agent:
 
 async def join_call(agent: Agent, call_type: str, call_id: str, **kwargs) -> None:
     call = await agent.create_call(call_type, call_id)
-    logger.info("Starting Qwen3-TTS VoiceDesign Agent...")
+    logger.info("Starting Mystical God VoiceDesign Agent...")
 
     async with agent.join(call):
         logger.info("Agent joined call")
         await asyncio.sleep(3)
         await agent.llm.simple_response(
-            text="Hello! My voice was designed from a text description using Qwen3-TTS VoiceDesign."
+            text="Mortal! I am Zeus. Speak your wish."
         )
         await agent.finish()
 

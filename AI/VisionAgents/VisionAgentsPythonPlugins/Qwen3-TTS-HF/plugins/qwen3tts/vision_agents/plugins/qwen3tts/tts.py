@@ -104,19 +104,15 @@ class TTS(tts.TTS):
             device = self.device
         elif torch.cuda.is_available():
             device = "cuda:0"
-        elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
-            device = "cpu"
-            logger.info(
-                "MPS detected but Qwen3-TTS uses device_map which works best "
-                "with CPU on Apple Silicon. Using device='cpu'."
-            )
+        elif torch.backends.mps.is_available():
+            device = "mps"
         else:
             device = "cpu"
 
-        if device == "cpu":
+        if device in ("cpu", "mps"):
             dtype = torch.float32
             if self._dtype_str != "float32":
-                logger.info("Overriding dtype to float32 for CPU device")
+                logger.info("Using float32 for %s device", device)
         else:
             dtype = dtype_map.get(self._dtype_str, torch.bfloat16)
 
@@ -126,11 +122,10 @@ class TTS(tts.TTS):
         from qwen_tts import Qwen3TTSModel
 
         device, dtype = self._resolve_device_and_dtype()
-        kwargs: dict[str, Any] = {
-            "device_map": device,
-            "dtype": dtype,
-        }
-        if self.attn_implementation:
+
+        kwargs: dict[str, Any] = {"dtype": dtype, "device_map": device}
+
+        if self.attn_implementation and device.startswith("cuda"):
             kwargs["attn_implementation"] = self.attn_implementation
 
         logger.info(
@@ -142,6 +137,7 @@ class TTS(tts.TTS):
         except Exception:
             logger.exception("Failed to load Qwen3-TTS model")
             raise
+
         logger.info("Qwen3-TTS model loaded successfully")
         return model
 

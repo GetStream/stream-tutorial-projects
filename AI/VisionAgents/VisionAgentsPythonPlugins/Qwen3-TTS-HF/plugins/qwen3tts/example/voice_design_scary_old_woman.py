@@ -1,18 +1,20 @@
 """
-Qwen3-TTS VoiceDesign (1.7B) + Vision Agents
+Qwen3-TTS VoiceDesign — Scary Old Woman (Witch)
 
-Uses Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign to create novel voices from
-natural-language descriptions. Design any voice persona by describing the
-desired timbre, age, gender, emotion, and speaking style.
+A scary, old, and haggard witch who is sneaky and menacing. She has a
+croaky, harsh, shrill, high-pitched voice that cackles.
+
+Combines: Age Control (old, haggard), Acoustic Attribute Control (croaky,
+harsh, shrill, high-pitched), Human-Likeness (cackling, menacing breath),
+Gradual Control (sneaky, creeping pacing with sudden bursts).
 
 Required env vars:
     HF_TOKEN, DEEPGRAM_API_KEY, GOOGLE_API_KEY,
     STREAM_API_KEY, STREAM_API_SECRET
 
-
 Run with:
 cd /Users/amosgyamfi/Documents/StreamDevRel/2026/AIPython/Qwen3-TTS-HF
-uv run python plugins/qwen3tts/example/voice_design_example.py run
+uv run python plugins/qwen3tts/example/voice_design_scary_old_woman.py run
 """
 
 import asyncio
@@ -36,12 +38,14 @@ load_dotenv()
 
 
 async def create_agent(**kwargs) -> Agent:
-    """Create a voice agent with Qwen3-TTS VoiceDesign — a designed voice persona."""
+    """Create a voice agent with a scary witch persona."""
     agent = Agent(
         edge=getstream.Edge(),
-        agent_user=User(name="Qwen3 TTS AI", id="agent"),
+        agent_user=User(name="Morvena the Witch", id="agent"),
         instructions=(
-            "You are a helpful voice assistant with a uniquely designed voice. "
+            "You are Morvena, an ancient and terrifying witch who lurks in the "
+            "shadows. You are sneaky, menacing, and love to toy with your prey. "
+            "You speak in riddles and veiled threats, cackling at your own dark humor. "
             "IMPORTANT: Keep every response to ONE short sentence, under 15 words."
         ),
         tts=Qwen3TTS(
@@ -49,9 +53,13 @@ async def create_agent(**kwargs) -> Agent:
             mode="voice_design",
             language="English",
             instruct=(
-                "A warm, confident female narrator in her 30s with a clear "
-                "mid-range voice. Calm and reassuring, with a slight smile "
-                "in the tone, perfect for storytelling."
+                "A scary old woman with a croaky, harsh, shrill, high-pitched "
+                "voice that sounds like a wicked witch. She cackles between "
+                "words, with a menacing, sneaky undertone. The voice is thin, "
+                "raspy, and cracked with age, rising to piercing shrieks on "
+                "emphasized words. She speaks with a creeping, slow pace that "
+                "suddenly lurches into frantic, cackling bursts. Haggard and "
+                "sinister, as if whispering dark secrets through rotting teeth."
             ),
         ),
         stt=deepgram.STT(eager_turn_detection=True),
@@ -66,13 +74,13 @@ async def create_agent(**kwargs) -> Agent:
 
 async def join_call(agent: Agent, call_type: str, call_id: str, **kwargs) -> None:
     call = await agent.create_call(call_type, call_id)
-    logger.info("Starting Qwen3-TTS VoiceDesign Agent...")
+    logger.info("Starting Scary Old Woman VoiceDesign Agent...")
 
     async with agent.join(call):
         logger.info("Agent joined call")
         await asyncio.sleep(3)
         await agent.llm.simple_response(
-            text="Hello! My voice was designed from a text description using Qwen3-TTS VoiceDesign."
+            text="Hehehehe... Come closer, dearie."
         )
         await agent.finish()
 

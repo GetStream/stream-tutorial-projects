@@ -1,18 +1,20 @@
 """
-Qwen3-TTS VoiceDesign (1.7B) + Vision Agents
+Qwen3-TTS VoiceDesign — African-American Grandma
 
-Uses Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign to create novel voices from
-natural-language descriptions. Design any voice persona by describing the
-desired timbre, age, gender, emotion, and speaking style.
+A very old, cranky, and croaky African-American grandma. 80 years old.
+Very hoarse, grumpy, shrill, and frustrated.
+
+Combines: Age Control (80 years old), Acoustic Attribute Control (hoarse,
+shrill, croaky), Human-Likeness (natural elderly speech), Gradual Control
+(grumpy pacing with frustrated emphasis).
 
 Required env vars:
     HF_TOKEN, DEEPGRAM_API_KEY, GOOGLE_API_KEY,
     STREAM_API_KEY, STREAM_API_SECRET
 
-
 Run with:
 cd /Users/amosgyamfi/Documents/StreamDevRel/2026/AIPython/Qwen3-TTS-HF
-uv run python plugins/qwen3tts/example/voice_design_example.py run
+uv run python plugins/qwen3tts/example/voice_design_african_american_grandma.py run
 """
 
 import asyncio
@@ -36,12 +38,14 @@ load_dotenv()
 
 
 async def create_agent(**kwargs) -> Agent:
-    """Create a voice agent with Qwen3-TTS VoiceDesign — a designed voice persona."""
+    """Create a voice agent with a cranky grandma persona."""
     agent = Agent(
         edge=getstream.Edge(),
-        agent_user=User(name="Qwen3 TTS AI", id="agent"),
+        agent_user=User(name="Grandma Lucille", id="agent"),
         instructions=(
-            "You are a helpful voice assistant with a uniquely designed voice. "
+            "You are Grandma Lucille, an 80-year-old African-American grandmother "
+            "who has seen it all and has zero patience left. You are cranky, blunt, "
+            "and always complaining, but deep down you care. "
             "IMPORTANT: Keep every response to ONE short sentence, under 15 words."
         ),
         tts=Qwen3TTS(
@@ -49,9 +53,12 @@ async def create_agent(**kwargs) -> Agent:
             mode="voice_design",
             language="English",
             instruct=(
-                "A warm, confident female narrator in her 30s with a clear "
-                "mid-range voice. Calm and reassuring, with a slight smile "
-                "in the tone, perfect for storytelling."
+                "An elderly female grandmother, 80 years old, with a high-pitched, "
+                "thin, croaky old woman's voice. She sounds cranky and shrill, "
+                "with a scratchy, nasal, feminine tone that wavers with age. Her "
+                "speech is slow with sharp, irritable emphasis. The voice is "
+                "distinctly an old lady's — reedy, quavering, and breathless, "
+                "with a warm Southern African-American cadence."
             ),
         ),
         stt=deepgram.STT(eager_turn_detection=True),
@@ -66,13 +73,13 @@ async def create_agent(**kwargs) -> Agent:
 
 async def join_call(agent: Agent, call_type: str, call_id: str, **kwargs) -> None:
     call = await agent.create_call(call_type, call_id)
-    logger.info("Starting Qwen3-TTS VoiceDesign Agent...")
+    logger.info("Starting African-American Grandma VoiceDesign Agent...")
 
     async with agent.join(call):
         logger.info("Agent joined call")
         await asyncio.sleep(3)
         await agent.llm.simple_response(
-            text="Hello! My voice was designed from a text description using Qwen3-TTS VoiceDesign."
+            text="Mmhmm. What do you want now, child?"
         )
         await agent.finish()
 
