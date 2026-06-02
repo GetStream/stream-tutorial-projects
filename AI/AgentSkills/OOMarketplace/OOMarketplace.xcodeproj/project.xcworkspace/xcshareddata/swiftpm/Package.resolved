@@ -1,0 +1,69 @@
+{
+  "originHash" : "ee8f0cd3e765077781aa8313f172744590864534515f66c8fd510c0b3179c183",
+  "pins" : [
+    {
+      "identity" : "stream-chat-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-chat-swift.git",
+      "state" : {
+        "revision" : "9d322d9c26893112ae92de4eec6b14db1b5d3726",
+        "version" : "5.1.0"
+      }
+    },
+    {
+      "identity" : "stream-chat-swiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-chat-swiftui.git",
+      "state" : {
+        "revision" : "262d7a41685d05b45ed327180668fa0f0e989f2c",
+        "version" : "5.1.0"
+      }
+    },
+    {
+      "identity" : "stream-core-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-core-swift.git",
+      "state" : {
+        "revision" : "61c57f0c18a9bfa440f19b9222029fb9c4c15dcf",
+        "version" : "0.6.2"
+      }
+    },
+    {
+      "identity" : "stream-feeds-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-feeds-swift.git",
+      "state" : {
+        "revision" : "69201ad0359285f5fe96474965a4e73e89dac60d",
+        "version" : "0.5.2"
+      }
+    },
+    {
+      "identity" : "stream-video-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-video-swift.git",
+      "state" : {
+        "revision" : "4be15a9b7cf0c446b7be4438156a776e9023fcef",
+        "version" : "1.46.0"
+      }
+    },
+    {
+      "identity" : "stream-video-swift-webrtc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-video-swift-webrtc.git",
+      "state" : {
+        "revision" : "6d45af906f8c91d6bfd01c5f68b76f7d7c90eaa3",
+        "version" : "137.0.71"
+      }
+    },
+    {
+      "identity" : "swift-protobuf",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-protobuf.git",
+      "state" : {
+        "revision" : "102a647b573f60f73afdce5613a51d71349fe507",
+        "version" : "1.30.0"
+      }
+    }
+  ],
+  "version" : 3
+}
