@@ -1,0 +1,33 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "meta/muse-spark-1.2",
+  "provider": {
+    "meta": {
+      "name": "Meta Model API",
+      "npm": "@ai-sdk/openai",
+      "options": {
+        "baseURL": "https://api.meta.ai/v1",
+        "apiKey": "{env:MODEL_API_KEY}"
+      },
+      "models": {
+        "muse-spark-1.2": {
+          "name": "Muse Spark 1.2",
+          "reasoning": true,
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "modalities": {
+            "input": ["text", "image", "pdf", "video"],
+            "output": ["text"]
+          },
+          "options": {
+            "reasoningEffort": "high",
+            "reasoningSummary": "auto",
+            "include": ["reasoning.encrypted_content"]
+          }
+        }
+      }
+    }
+  }
+}
