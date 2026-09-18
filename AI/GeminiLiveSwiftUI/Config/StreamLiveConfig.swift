@@ -8,11 +8,11 @@ import Foundation
 nonisolated enum StreamLiveConfig {
     // MARK: Stream
 
-    static let streamAPIKey = "ddwdnyxnm5h9"
-    static let userId = "aurora"
-    static let userName = "Aurora"
+    static let streamAPIKey = "streamAPIKey"
+    static let userId = "userId"
+    static let userName = "userName"
     static let userImageURL = URL(string: "https://api.dicebear.com/9.x/glass/png?seed=aurora")
-    static let userToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3ODg3NzAwMTAsInVzZXJfaWQiOiJhdXJvcmEifQ.MhNSkgCtrnJEKqE8qzhE7SbQjW0uEMQFRJ__rIuyJb4"
+    static let userToken = "userToken"
 
     /// Every live session is its own Stream call so the camera/mic pipeline is
     /// owned by Stream Video and other participants could join later.
