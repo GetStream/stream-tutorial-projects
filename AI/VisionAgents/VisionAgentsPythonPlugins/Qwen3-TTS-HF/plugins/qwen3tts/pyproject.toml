@@ -13,7 +13,7 @@ license = "MIT"
 dependencies = [
     "vision-agents[deepgram]",
     "qwen-tts>=0.1.0",
-    "torch>=2.0",
+    "torch>=2.13.0",
     "numpy",
     "soundfile",
 ]

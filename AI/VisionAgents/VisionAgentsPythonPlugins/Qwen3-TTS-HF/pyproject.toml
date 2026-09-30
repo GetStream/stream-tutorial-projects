@@ -7,7 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "vision-agents[deepgram,gemini,getstream,smart-turn]>=0.5.1",
     "qwen-tts>=0.1.0",
-    "torch>=2.0",
+    "torch>=2.13.0",
     "numpy",
     "soundfile",
     "python-dotenv>=1.0",
