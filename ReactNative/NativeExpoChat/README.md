@@ -1,0 +1,1 @@
+> **This project is out of date.** It uses Expo 49 and a demo token that has expired. For a current app, follow the [React Native chat tutorial for Expo](https://getstream.io/chat/sdk/react-native/tutorial/expo/).

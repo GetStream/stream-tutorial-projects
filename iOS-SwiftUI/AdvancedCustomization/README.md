@@ -1,0 +1,1 @@
+> **This project is out of date.** It was built in 2023 with Stream Video iOS 0.x and may not build with current versions. For a current walkthrough, see [the iOS video calling tutorial](https://getstream.io/video/sdk/ios/tutorial/video-calling/).
