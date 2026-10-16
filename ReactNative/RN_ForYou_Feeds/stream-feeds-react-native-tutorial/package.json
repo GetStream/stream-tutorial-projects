@@ -11,9 +11,7 @@
   "dependencies": {
     "@react-native-community/netinfo": "^11.4.1",
     "@react-navigation/native": "^7.0.0",
-    "@stream-io/feeds-client": "^0.3.42",
-    "@stream-io/feeds-react-native-sdk": "^0.1.55",
-    "@stream-io/state-store": "^1.1.6",
+    "@stream-io/feeds-react-native-sdk": "^1.0.23",
     "expo": "~52.0.0",
     "expo-constants": "~17.0.0",
     "expo-font": "~13.0.0",

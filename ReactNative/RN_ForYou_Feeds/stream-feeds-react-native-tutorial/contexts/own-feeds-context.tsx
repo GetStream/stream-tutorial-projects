@@ -38,8 +38,8 @@ export const OwnFeedsContextProvider = ({ children }: PropsWithChildren) => {
     // Social media apps usually don't add new activities from WebSocket
     // users need to pull to refresh
     const timeline = client.feed("timeline", connectedUser.id, {
-      activityAddedEventFilter: ({ activity }) =>
-        activity.user?.id === connectedUser.id,
+      onNewActivity: ({ activity }) =>
+        activity.user?.id === connectedUser.id ? "add-to-start" : "ignore",
     });
 
     setOwnTimeline(timeline);

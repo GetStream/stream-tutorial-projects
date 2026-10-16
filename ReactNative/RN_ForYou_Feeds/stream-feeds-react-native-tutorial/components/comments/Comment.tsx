@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { CommentResponse } from "@stream-io/feeds-client";
+import { CommentResponse } from "@stream-io/feeds-react-native-sdk";
 
 type CommentItemProps = {
   comment: CommentResponse;
