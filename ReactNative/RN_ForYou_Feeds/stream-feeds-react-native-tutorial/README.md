@@ -24,7 +24,13 @@ A complete React Native activity feed application built with Stream's Activity F
 yarn install
 ```
 
-2. The app comes pre-configured with demo credentials in `user.ts`. For production, replace these with your own Stream API credentials.
+2. Add your Stream credentials to `user.ts`: the API key from the [Stream dashboard](https://dashboard.getstream.io/) and a token for the user in that file, created with the [Stream CLI](https://getstream.io/cli/):
+
+```bash
+getstream token foryou-demo-user
+```
+
+A new app has no posts yet, so post a few from the app to fill the feeds.
 
 ## Running the App
 

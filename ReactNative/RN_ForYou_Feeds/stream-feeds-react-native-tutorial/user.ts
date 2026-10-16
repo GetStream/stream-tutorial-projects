@@ -1,7 +1,12 @@
-export const API_KEY = '8kyvu2hwe68n';
+// Use your own Stream app. Copy its API key from the Stream dashboard
+// (https://dashboard.getstream.io/) and create a token for this user with
+// the Stream CLI (https://getstream.io/cli/):
+//
+//   getstream token foryou-demo-user
+export const API_KEY = 'YOUR_API_KEY';
 
 export const CURRENT_USER = {
-  id: '4aa3cd66-0124-4129-80cd-b86877114d58',
+  id: 'foryou-demo-user',
   name: 'Eggplant Spaghetti',
-  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3Byb250by5nZXRzdHJlYW0uaW8iLCJzdWIiOiJ1c2VyLzRhYTNjZDY2LTAxMjQtNDEyOS04MGNkLWI4Njg3NzExNGQ1OCIsInVzZXJfaWQiOiI0YWEzY2Q2Ni0wMTI0LTQxMjktODBjZC1iODY4NzcxMTRkNTgiLCJ2YWxpZGl0eV9pbl9zZWNvbmRzIjo2MDQ4MDAsImlhdCI6MTc3MDIwMzM4MCwiZXhwIjoxNzcwODA4MTgwfQ.Oce5b4ZEzXCUOxqINg7muzhOMd42Z-WDPYwC3OumH7c',
+  token: 'YOUR_USER_TOKEN',
 };
