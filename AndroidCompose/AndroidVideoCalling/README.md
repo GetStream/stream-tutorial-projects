@@ -1,0 +1,1 @@
+> **This project is out of date.** It was built in 2024 with Stream Video Android 1.0 and may not build with current versions. For a current walkthrough, see [the Android video calling tutorial](https://getstream.io/video/sdk/android/tutorial/video-calling/).

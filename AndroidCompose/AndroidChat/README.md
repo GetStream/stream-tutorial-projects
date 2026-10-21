@@ -1,0 +1,1 @@
+> **This project is out of date.** It was built in 2024 with Stream Chat Android 6.4 and may not build with current versions. For a current walkthrough, see [the Android Compose chat tutorial](https://getstream.io/chat/sdk/android/tutorial/compose/).
